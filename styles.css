@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:100 to 900;
+  font-style:normal;
+}
+
+
+
+/* *{
+   
+margin-right: 20px;
+margin-left: 10px;
+} */
+/* .btn-fst{ */
+    /* border-radius: 17px; */
+    /* border-color: solid green;
+    background-color: rgba(29, 209, 0, 0.1); */
+    /* width:100px;
+    height:40px; */
+    /* text-align: center; */
+    /* position: relative;
+    top:-20px; */
+
+/* } */
+/* #bus-icon{
+    position:relative;
+    left:-68px;
+    
+    top:-5px;
+    Width : 24px;
+height: 24px;
+} */
+
+/* .navbar-end{
+    /* display:flex; */
+    /* gap:0px; */
+    /* padding-left:20px; */
+    /* padding-top: 15px;; */
+    /* text-align: center; */
+} */
+
+/* .bg-image-style{
+    linear-gradient(180.00deg, rgba(3, 7, 18, 0.5),rgba(3, 7, 18, 0) 100%),url(1);
+} */
