@@ -17,6 +17,31 @@ console.log(typeof perSeatPrice);
 
 const appendWork=document.getElementById("for-append-place");
  
+// 9th work ...akta seat akber ar beshi select kora jabe na ...
+event.target.setAttribute("disabled",false);
+event.target.style.backgroundColor="green";
+
+//8th work .... 4 tar beshi seat select hobe na......
+const atleastSelectedSeat=getConvertedValue("select-total-seat");
+ if(atleastSelectedSeat + 1>4){
+    alert("limit cross (you can select 4 seat per-person)");
+    return;
+ }
+
+
+
+
+//6th work   seat left   initialy 8 seat..............
+const seatLeft=getConvertedValue("seat-lefts");
+document.getElementById("seat-lefts").innerText=seatLeft-1;
+
+
+//7th work  for  how many seat i selected ..........
+const selectedSeat=getConvertedValue("select-total-seat");
+document.getElementById("select-total-seat").innerText=selectedSeat+1;
+
+
+
 const div=document.createElement("div");
 div.classList.add("flex");
 div.classList.add("gap-20");
@@ -42,6 +67,9 @@ updateTotalCost(perSeatPrice);   //3th work
 updateGrandTotal();  //4th work 
     });    
 }
+
+
+
 
 // 4yh work.................
 //  function updateGrandTotal(){

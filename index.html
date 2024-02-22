@@ -239,7 +239,7 @@
 
           </div>
           <div class=" flex  gap-20">
-            <h2 class=" text-base  font-medium">seat<span id="select-total-seat">8</span></h2>
+            <h2 class=" text-base  font-medium">seat<span id="select-total-seat">0</span></h2>
             <h2 class="text-base  font-medium">Class</h2>
             <h2 class="text-base  font-medium ">Price</h2>
             <br>
@@ -269,9 +269,38 @@
             <br>
             <p class=" gap-20 mt-20   ml-10">Grand Total........ .. ... ....................... BD TK <span id="tk-grand">0</span></p>
           </div>
-
+                  <!-- ..........modal open............... -->
           <div>
-            <button class="btn btn-wide  mt-20  bg-green-400  mb-10  ml-24 ">Next</button>
+            <!-- <button class="btn btn-wide  mt-20  bg-green-400  mb-10  ml-24 ">Next</button> -->
+            <!-- Open the modal using ID.showModal() method       <main class="relative left-[500px] top-[150px]">-->
+                <button class="btn      bg-green-400  mt-20   mb-10  ml-24" onclick="my_modal_5.showModal()">open modal</button>
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                  <div class="modal-box">
+                    <!-- <h3 class="font-bold text-lg"></h3> -->
+                    <p class="py-4">  
+                      <div class="card w-96 bg-base-100 shadow-xl">
+                          <div class="card-body">
+                              <figure class="px-10 pt-10">
+                                  <img src="images/success.png" alt="Shoes"
+                                      class="rounded-xl" />
+                              </figure>
+                              <h2 class="card-title justify-center">Success</h2>
+                              <p class="text-center ">Thank's for booking us.</p>
+                            
+                              <div class="card-actions justify-end">
+                                  <button class="btn btn-success btn-primary relative right-28">Continue</button>
+                              </div>
+                          </div>
+                      </div>
+                  </p>
+                    <div class="modal-action">
+                      <form method="dialog">
+                
+                        <button class="btn">Close</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
           </div>
         </div>
       </div>
