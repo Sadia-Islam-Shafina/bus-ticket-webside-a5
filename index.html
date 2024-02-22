@@ -192,20 +192,38 @@
       
     </div>
     <div class=" flex  gap-20">
-      <h2 class=" text-base  font-medium">seat<span id="select-total-seat"> 12</span></h2>
+      <h2 class=" text-base  font-medium">seat<span id="select-total-seat">12</span></h2>
       <h2 class="text-base  font-medium">Class</h2>
       <h2 class="text-base  font-medium ">Price</h2>
       <br>
-      <hr>
-     
+      <hr/>
+      <!-- append ar jonne div niye space niye rakhte hobe , jate append oi place a boshte pare..................... -->
+         <div id="for-append-place">
+
+         </div>
     </div>
     <div> <br>
       <p class=" gap-20   ml-10">Total Price  <span class="ml-24">BD TK</span>  <span id="tk-total"> 1230</span></p>
     </div>
+   
+    <hr />
+    <!-- .................. -->
+
+    <div class="coupon-code   flex  gap-5 p-10">
+      <input id="coupon-code" type="text" placeholder="Coupon Code" />
+      <button     onclick="updateGrandTotal('click from apply')"  id="apply-btn"   class=" bg-green-400" > Apply </button>
+    </div>
+    <hr />
+
+
+
+    <!-- .............end............ -->
+
     <div>
       <br>
       <p class=" gap-20 mt-20   ml-10">Grand Total  <span   class="ml-24">BD TK</span>  <span id="tk-total"> 1230</span></p>
     </div>
+
     <div>
       <button class="btn btn-wide  mt-20  bg-green-400  mb-10  ml-24 ">Next</button>
     </div>
