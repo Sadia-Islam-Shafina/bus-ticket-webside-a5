@@ -13,13 +13,14 @@ console.log(typeof perSeatPrice);
 // const convertedPerSeatPrice=perseInt("perSeatPrice");
 // console.log(convertedPerSeatPrice);
 
-
-
 const appendWork=document.getElementById("for-append-place");
+//10th work ...  selected seat color korte ...
+// event.target.document.getElementById("")
  
 // 9th work ...akta seat akber ar beshi select kora jabe na ...
 event.target.setAttribute("disabled",false);
 event.target.style.backgroundColor="green";
+
 
 //8th work .... 4 tar beshi seat select hobe na......
 const atleastSelectedSeat=getConvertedValue("select-total-seat");
