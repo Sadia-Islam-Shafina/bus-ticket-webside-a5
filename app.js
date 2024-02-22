@@ -1,4 +1,4 @@
-
+//  2nd work....
 const allSeat = document.getElementsByClassName("seat");
 
 for(const seat of allSeat){
@@ -35,12 +35,24 @@ div.appendChild(p3);
 
 appendWork.appendChild(div);
 
-updateTotalCost(perSeatPrice);
+
+
+updateTotalCost(perSeatPrice);   //3th work
+
+updateGrandTotal();  //4th work 
     });    
 }
 
+// 4yh work.................
+ function updateGrandTotal(){
+    const totalCost=getConvertedValue("tk-total");
+
+    document.getElementById("tk-grand").innerText=totalCost;
+ }
 
 
+
+//  3th work
 function updateTotalCost(value){
     const totalCost=getConvertedValue("tk-total");
 
@@ -48,7 +60,7 @@ function updateTotalCost(value){
     document.getElementById("tk-total").innerText=sum;
 }
 
-
+// 1st work ....
 function getConvertedValue(id) {
     const targetElement = document.getElementById(id).innerText;
     return parseInt(targetElement);
