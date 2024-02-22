@@ -44,11 +44,36 @@ updateGrandTotal();  //4th work
 }
 
 // 4yh work.................
- function updateGrandTotal(){
-    const totalCost=getConvertedValue("tk-total");
+//  function updateGrandTotal(){
+//     const totalCost=getConvertedValue("tk-total");
 
-    document.getElementById("tk-grand").innerText=totalCost;
- }
+//     document.getElementById("tk-grand").innerText=totalCost;
+//  }
+
+//5th   according to 4th work
+function updateGrandTotal(status){
+    const totalCost=getConvertedValue("tk-total");
+    if(status==undefined){
+        document.getElementById("tk-grand").innerText=totalCost;
+    } 
+    else{
+        const couponCode=document.getElementById("coupon-code").value;
+
+        if(couponCode=="NEW15"){
+            const discount= totalCost*0.15;
+            document.getElementById("tk-grand").innerText=totalCost-discount;
+        }
+
+        else if(couponCode=="Couple 20"){
+            const discount= totalCost*0.2;
+            document.getElementById("tk-grand").innerText=totalCost-discount;
+        }
+        else{
+            alert("you are not get discount ");
+        }
+            
+    }
+}
 
 
 
